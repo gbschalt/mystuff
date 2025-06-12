@@ -1,0 +1,5 @@
+Gzip('Dynamic Huffman Coding','','',false)
+To_Base64('A-Za-z0-9+/=')
+Find_/_Replace({'option':'Regex','string':'(?<=^(.{76})+)'},'\\n',true,true,true,true)
+Find_/_Replace({'option':'Regex','string':'^'},'eval "$(echo "$(cat <<\'EOT\'\\n',false,false,false,false)
+Find_/_Replace({'option':'Regex','string':'$'},'\\nEOT\\n)" | base64 -d | gunzip)"',false,false,false,false)
